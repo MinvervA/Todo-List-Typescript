@@ -1,0 +1,9 @@
+.combo-button:hover .logo {
+  background-color: crimson;
+  color: white;
+  border-radius: 100%;
+}
+
+.combo-button:hover p {
+  color: red;
+}
