@@ -35,15 +35,17 @@ export const Todo: React.FC = () => {
       <div className="h-[48px] flex items-center px-9 shadow-md">
         <p className="font-bold text-xl">Todo</p>
       </div>
-      <div className="px-9">
-        <div className="text-lg font-semibold mt-8">Things todo :</div>
-        <div className="">
-          {todos.map((item) => (
-            <List key={item.id} {...item} setTodos={setTodos} setInputOpen={setInputOpen} />
-          ))}
-        </div>
-        <div className="py-2">
-          <InputTodo inputOpen={inputOpen} setInputOpen={setInputOpen} setTodos={setTodos} />
+      <div className="md:max-w-[960px] md:mx-auto">
+        <div className="px-9">
+          <div className="text-lg font-semibold mt-8">Things todo :</div>
+          <div className="">
+            {todos.map((item) => (
+              <List key={item.id} {...item} setTodos={setTodos} setInputOpen={setInputOpen} />
+            ))}
+          </div>
+          <div className="py-2">
+            <InputTodo inputOpen={inputOpen} setInputOpen={setInputOpen} setTodos={setTodos} />
+          </div>
         </div>
       </div>
     </div>
